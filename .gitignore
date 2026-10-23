@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# NTTHO News Feature (ignore to avoid conflict with parallel team member)
+src/app/(pages)/news-nttho/
+src/features/news-nttho/
+src/data/newsNtthoData.ts
+.agents/

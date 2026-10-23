@@ -21,7 +21,7 @@ export default function MenuList() {
 
         // Menu structure for matching
         const menuItems = [
-            { key: 'home', paths: ['/', '/index-2', '/index-3'] },
+            { key: 'home', paths: ['/home', '/index-2', '/index-3'] },
             { key: 'services', paths: ['/services', '/services-2', '/single-service'] },
             { key: 'about', paths: ['/about'] },
             { key: 'quote', paths: ['/quote'] },
@@ -31,8 +31,8 @@ export default function MenuList() {
             { key: 'pricing', paths: ['/pricing'] },
             { key: 'faq', paths: ['/faq'] },
             { key: '404', paths: ['/404'] },
-            { key: 'projects', paths: ['/case-studies', '/case-studies-2', '/single-casestudy'] },
-            { key: 'blog', paths: ['/blog', '/blog-2', '/blog-classic', '/single-post', '/single-post-2'] },
+            { key: 'projects', paths: ['/case-studies', '/case-studies-2', '/single-casestudy', '/project-star'] },
+            { key: 'blog', paths: ['/blog', '/blog-2', '/blog-classic', '/single-post', '/single-post-2', '/news-nttho'] },
             { key: 'contact', paths: ['/contact'] },
         ];
 
@@ -86,8 +86,8 @@ export default function MenuList() {
                     Home
                 </Link>
                 <ul className={`dropdown-menu ${isOpen('home') ? 'show' : ''}`}>
-                    <li className={isActive('home') && location === '/' ? 'current' : ''}>
-                        <Link href="/" className="dropdown-item">
+                    <li className={isActive('home') && (location === '/home' || location === '/') ? 'current' : ''}>
+                        <Link href="/home" className="dropdown-item">
                             Home 1
                         </Link>
                     </li>
@@ -246,6 +246,11 @@ export default function MenuList() {
                     Projects
                 </Link>
                 <ul className={`dropdown-menu ${isOpen('projects') ? 'show' : ''}`}>
+                    <li className={location === '/project-star' ? 'current' : ''}>
+                        <Link href="/project-star" className="dropdown-item text-danger fw-bold">
+                            <i className="fa-solid fa-star me-1"></i> Dự Án Star
+                        </Link>
+                    </li>
                     <li className={location === '/case-studies' ? 'current' : ''}>
                         <Link href="/case-studies" className="dropdown-item">
                             Projects
@@ -275,6 +280,11 @@ export default function MenuList() {
                     Blog
                 </Link>
                 <ul className={`dropdown-menu ${isOpen('blog') ? 'show' : ''}`}>
+                    <li className={location === '/news-nttho' ? 'current' : ''}>
+                        <Link href="/news-nttho" className="dropdown-item text-danger fw-bold">
+                            <i className="fa-solid fa-star me-1"></i> Tin Tức NTTHO
+                        </Link>
+                    </li>
                     <li className={location === '/blog' ? 'current' : ''}>
                         <Link href="/blog" className="dropdown-item">
                             Blog Grid 01

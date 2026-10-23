@@ -54,7 +54,7 @@ const ScrollToTop = () => {
         setVisible(shouldBeVisible);
     }, []);
 
-    useLayoutEffect(() => {
+    useEffect(() => {
         window.scrollTo({ top: 0, behavior: "instant" });
     }, [location]);
 
