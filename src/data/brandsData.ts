@@ -15,48 +15,18 @@ export interface Brand {
     link: string;
 }
 
-// Brands data
+// Brands data matching Home page
 export const brandsData: Brand[] = [
-    {
-        id: 1,
-        image: Br1,
-        alt: "Brand 1",
-        link: "#"
-    },
-    {
-        id: 2,
-        image: Br2,
-        alt: "Brand 2",
-        link: "#"
-    },
-    {
-        id: 3,
-        image: Br3,
-        alt: "Brand 3",
-        link: "#"
-    },
-    {
-        id: 4,
-        image: Br4,
-        alt: "Brand 4",
-        link: "#"
-    },
-    {
-        id: 5,
-        image: Br5,
-        alt: "Brand 5",
-        link: "#"
-    },
-    {
-        id: 6,
-        image: Br6,
-        alt: "Brand 6",
-        link: "#"
-    },
-    {
-        id: 7,
-        image: Br1,
-        alt: "Brand 1 Duplicate",
-        link: "#"
-    }
+    { id: 1, image: Br1, alt: "Cargo Ship Brand 1", link: "#" },
+    { id: 2, image: Br2, alt: "Cargo Ship Brand 2", link: "#" },
+    { id: 3, image: Br3, alt: "Cargo Ship Brand 3", link: "#" },
+    { id: 4, image: Br4, alt: "Cargo Ship Brand 4", link: "#" },
+    { id: 5, image: Br5, alt: "Cargo Ship Brand 5", link: "#" },
+    { id: 6, image: Br6, alt: "Cargo Ship Brand 6", link: "#" },
+    { id: 7, image: Br1, alt: "Cargo Ship Brand 1", link: "#" },
+    { id: 8, image: Br2, alt: "Cargo Ship Brand 2", link: "#" },
+    { id: 9, image: Br3, alt: "Cargo Ship Brand 3", link: "#" },
+    { id: 10, image: Br4, alt: "Cargo Ship Brand 4", link: "#" },
+    { id: 11, image: Br5, alt: "Cargo Ship Brand 5", link: "#" },
+    { id: 12, image: Br6, alt: "Cargo Ship Brand 6", link: "#" },
 ];

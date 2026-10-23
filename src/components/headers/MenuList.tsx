@@ -21,7 +21,7 @@ export default function MenuList() {
 
         // Menu structure for matching
         const menuItems = [
-            { key: 'home', paths: ['/', '/index-2', '/index-3'] },
+            { key: 'home', paths: ['/home', '/index-2', '/index-3'] },
             { key: 'services', paths: ['/services', '/services-2', '/single-service'] },
             { key: 'about', paths: ['/about'] },
             { key: 'quote', paths: ['/quote'] },
@@ -86,8 +86,8 @@ export default function MenuList() {
                     Home
                 </Link>
                 <ul className={`dropdown-menu ${isOpen('home') ? 'show' : ''}`}>
-                    <li className={isActive('home') && location === '/' ? 'current' : ''}>
-                        <Link href="/" className="dropdown-item">
+                    <li className={isActive('home') && (location === '/home' || location === '/') ? 'current' : ''}>
+                        <Link href="/home" className="dropdown-item">
                             Home 1
                         </Link>
                     </li>
