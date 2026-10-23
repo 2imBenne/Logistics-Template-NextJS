@@ -29,8 +29,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${rethinkSans.variable} ${dmSans.variable}`}>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <body className={`${rethinkSans.variable} ${dmSans.variable}`} suppressHydrationWarning>
         <ContextProvider>
           <CustomLayout>
             {children}
