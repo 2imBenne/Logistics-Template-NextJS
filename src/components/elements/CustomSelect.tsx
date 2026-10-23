@@ -75,7 +75,7 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
 }) => {
     // Default color scheme 
     const defaultColors: Required<CustomColors> = {
-        primary: '#fd5523',        // Main brand color
+        primary: '#c9322b',        // Main brand color
         tertiary: '#122f2a',       // Text color
         mute: '#788094',           // Border and placeholder color
         info: '#fff',              // Selected text color
