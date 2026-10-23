@@ -51,8 +51,8 @@ Notes:
 	--font-size-base: 16px;
 	--font-weight-base: 400;
 	--line-height-base: 26px;
-	--primary: #fd5523;
-	--primary-rgb: 253, 85, 35;
+	--primary: #c9322b;
+	--primary-rgb: 201, 50, 43;
 	--white: #fff;
 	--white-rgb: 255, 255, 255;
 	--shade: #ecf0f1;
@@ -73,7 +73,7 @@ Notes:
 
 /*! mixins */
 .text-primary {
-	color: #fd5523 !important
+	color: #c9322b !important
 }
 
 .text-secondary {
@@ -300,8 +300,8 @@ a:hover {
 }
 
 .form-check-input:focus {
-	border-color: #fdb09a;
-	box-shadow: 0 0 0 .25rem #ffd3c5
+	border-color: rgba(201, 50, 43, 0.4);
+	box-shadow: 0 0 0 .25rem rgba(201, 50, 43, 0.2)
 }
 
 .lead-sm {
@@ -927,7 +927,7 @@ ul.ct-list li:before {
 }
 
 .bg-primary {
-	background-color: #fd5523 !important
+	background-color: #c9322b !important
 }
 
 .bg-tertiary {
@@ -1030,15 +1030,15 @@ ul.ct-list li:before {
 }
 
 .btn-primary {
-	background-color: #fd5523;
-	border-color: #fd5523;
+	background-color: #c9322b;
+	border-color: #c9322b;
 	color: #fff
 }
 
 .btn-primary:focus,
 .btn-primary:hover {
-	background-color: rgb(234.8648648649, 55.5135135135, 2.1351351351);
-	border-color: rgb(234.8648648649, 55.5135135135, 2.1351351351);
+	background-color: #a82923;
+	border-color: #a82923;
 	color: #fff
 }
 
@@ -4545,7 +4545,7 @@ section.promo-sec .breadcrumb-item+.breadcrumb-item:before {
 	top: 52px;
 	width: 40px;
 	height: 34px;
-	background: linear-gradient(163deg, #fd5523, #5a0306);
+	background: linear-gradient(163deg, #c9322b, #5a0306);
 	-webkit-clip-path: polygon(100% 0, 0 0, 100% 100%);
 	clip-path: polygon(100% 0, 0 0, 100% 100%)
 }
@@ -8943,5 +8943,330 @@ section.bg_image {
 
 /* service */
 
+
+/* ============================================
+   Case Study Detail Page - Custom Primary Color
+   ============================================ */
+.case-details-page {
+	--primary: #c9322b;
+	--primary-rgb: 201, 50, 43;
+}
+
+.case-details-page .bg-primary {
+	background-color: #c9322b !important;
+}
+
+.case-details-page .btn-primary {
+	background-color: #c9322b;
+	border-color: #c9322b;
+}
+
+.case-details-page .btn-primary:focus,
+.case-details-page .btn-primary:hover {
+	background-color: #a82923;
+	border-color: #a82923;
+}
+
+.case-details-page .text-primary {
+	color: #c9322b !important;
+}
+
+.case-details-page .btn-dark:hover,
+.case-details-page .btn-info span {
+	background-color: #c9322b;
+}
+
+.case-details-page .btn-dark:hover {
+	border: 1px solid #c9322b;
+}
+
+/* ============================================
+   GEO Formatting Elements (Case Study Page)
+   ============================================ */
+.case-details-page .geo-badge {
+	display: inline-block;
+	background-color: rgba(201, 50, 43, 0.1);
+	color: #c9322b;
+	padding: 6px 14px;
+	border-radius: 20px;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 12px;
+}
+
+.case-details-page .geo-key-takeaways {
+	background: #fdf8f7;
+	border-left: 4px solid #c9322b;
+	border-radius: 12px;
+	padding: 24px 28px;
+	margin: 25px 0 35px;
+	box-shadow: 0 4px 15px rgba(201, 50, 43, 0.05);
+}
+
+.case-details-page .geo-key-takeaways h4 {
+	font-size: 19px;
+	font-weight: 700;
+	color: #020e28;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.case-details-page .geo-key-takeaways ul {
+	margin: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+.case-details-page .geo-key-takeaways li {
+	position: relative;
+	padding-left: 28px;
+	margin-bottom: 12px;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+}
+
+.case-details-page .geo-key-takeaways li:last-child {
+	margin-bottom: 0;
+}
+
+.case-details-page .geo-key-takeaways li:before {
+	content: "\f058";
+	font-family: "Font Awesome 6 Free", FontAwesome, sans-serif;
+	font-weight: 900;
+	color: #c9322b;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	font-size: 16px;
+}
+
+.case-details-page .geo-answer-first {
+	font-size: 16px;
+	line-height: 1.7;
+	color: #1a2238;
+	font-weight: 500;
+	background: #f7f9fc;
+	border-radius: 8px;
+	padding: 16px 20px;
+	margin-bottom: 20px;
+	border-left: 3px solid #020e28;
+}
+
+.case-details-page .geo-table-wrap {
+	margin: 30px 0;
+	overflow-x: auto;
+	border-radius: 12px;
+	box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+	border: 1px solid #edf0f5;
+}
+
+.case-details-page .geo-table {
+	width: 100%;
+	border-collapse: collapse;
+	background: #fff;
+	font-size: 14.5px;
+}
+
+.case-details-page .geo-table th {
+	background: #020e28;
+	color: #fff;
+	padding: 14px 18px;
+	text-align: left;
+	font-weight: 600;
+}
+
+.case-details-page .geo-table th:first-child {
+	background: #c9322b;
+}
+
+.case-details-page .geo-table td {
+	padding: 13px 18px;
+	border-bottom: 1px solid #edf0f5;
+	color: #444;
+}
+
+.case-details-page .geo-table tbody tr:hover {
+	background-color: #fafbfc;
+}
+
+.case-details-page .geo-quote-box {
+	background: #fff;
+	border: 1px solid #eef1f6;
+	border-left: 4px solid #c9322b;
+	border-radius: 10px;
+	padding: 22px 25px;
+	margin: 30px 0;
+	box-shadow: 0 3px 12px rgba(0,0,0,0.03);
+}
+
+.case-details-page .geo-quote-box p {
+	font-style: italic;
+	font-size: 15.5px;
+	color: #2c384e;
+	margin-bottom: 12px;
+	line-height: 1.65;
+}
+
+.case-details-page .geo-quote-author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.case-details-page .geo-quote-author strong {
+	color: #020e28;
+	font-size: 14.5px;
+}
+
+.case-details-page .geo-quote-author span {
+	color: #6c757d;
+	font-size: 13px;
+}
+
+.case-details-page .geo-steps {
+	margin: 25px 0 35px;
+}
+
+.case-details-page .geo-step-card {
+	background: #fff;
+	border: 1px solid #edf0f5;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 16px;
+	transition: all 0.25s ease;
+}
+
+.case-details-page .geo-step-card:hover {
+	border-color: #c9322b;
+	box-shadow: 0 4px 15px rgba(201, 50, 43, 0.08);
+}
+
+.case-details-page .geo-step-card h5 {
+	font-size: 16.5px;
+	font-weight: 700;
+	color: #020e28;
+	margin-bottom: 8px;
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.case-details-page .geo-step-badge {
+	background: #c9322b;
+	color: #fff;
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 13px;
+	font-weight: 700;
+	flex-shrink: 0;
+}
+
+.case-details-page .geo-step-card p {
+	margin-bottom: 0;
+	font-size: 14.5px;
+	color: #555;
+	line-height: 1.6;
+}
+
+.case-details-page .geo-faq {
+	margin: 35px 0;
+}
+
+.case-details-page .geo-faq-item {
+	background: #fff;
+	border: 1px solid #edf0f5;
+	border-radius: 10px;
+	padding: 18px 22px;
+	margin-bottom: 14px;
+}
+
+.case-details-page .geo-faq-item h5 {
+	font-size: 16px;
+	font-weight: 700;
+	color: #020e28;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: flex-start;
+	gap: 10px;
+}
+
+.case-details-page .geo-faq-item h5 i {
+	color: #c9322b;
+	font-size: 17px;
+	margin-top: 3px;
+}
+
+.case-details-page .geo-faq-item p {
+	margin-bottom: 0;
+	font-size: 14.5px;
+	line-height: 1.65;
+	color: #4a5568;
+}
+
+.case-details-page .geo-author-box {
+	background: #f7f9fc;
+	border-radius: 12px;
+	padding: 20px 24px;
+	margin-top: 35px;
+	display: flex;
+	gap: 18px;
+	align-items: center;
+	border: 1px solid #eef1f6;
+}
+
+.case-details-page .geo-author-avatar {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: #c9322b;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 22px;
+	flex-shrink: 0;
+}
+
+.case-details-page .geo-author-info h6 {
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 4px;
+	color: #020e28;
+}
+
+.case-details-page .geo-author-info p {
+	font-size: 13.5px;
+	color: #6c757d;
+	margin-bottom: 0;
+	line-height: 1.5;
+}
+
+/* Brand Logo Proportions & Header Navbar Alignment */
+@media (min-width: 1200px) {
+	.header.header-default .navbar .navbar-brand {
+		min-width: 255px;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		padding-right: 20px;
+	}
+}
+
+.navbar .navbar-brand img,
+.canvas-menu .logo img,
+.footer-widget .f-logo img {
+	max-height: 56px;
+	width: auto;
+	object-fit: contain;
+}
 
 /*# sourceMappingURL=style.css.map */
