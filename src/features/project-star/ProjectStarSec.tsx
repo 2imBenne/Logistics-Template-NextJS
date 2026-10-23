@@ -5,13 +5,13 @@ import Image from "next/image";
 import Link from "next/link";
 import FadeInAdvanced from "@/components/elements/FadeInAdvanced";
 import {
-    projectNtthoCategories,
-    projectNtthoData,
-    projectStats,
+    projectStarCategories,
+    projectStarData,
     ProjectServicePost,
-} from "@/data/projectNtthoData";
+    projectStats,
+} from "@/data/projectStarData";
 
-export default function ProjectNtthoSec() {
+export default function ProjectStarSec() {
     const [selectedCategory, setSelectedCategory] = useState<string>("all");
     const [activeModalItem, setActiveModalItem] = useState<ProjectServicePost | null>(null);
     const [currentPage, setCurrentPage] = useState<number>(1);
@@ -20,8 +20,8 @@ export default function ProjectNtthoSec() {
 
     const filteredProjects =
         selectedCategory === "all"
-            ? projectNtthoData
-            : projectNtthoData.filter((item) => item.categoryGroup === selectedCategory);
+            ? projectStarData
+            : projectStarData.filter((item) => item.categoryGroup === selectedCategory);
 
     // Tính toán số trang chuẩn xác vừa khớp với số lượng dự án thực tế
     const totalPages = Math.ceil(filteredProjects.length / ITEMS_PER_PAGE) || 1;
@@ -45,7 +45,7 @@ export default function ProjectNtthoSec() {
     };
 
     return (
-        <section className="project-nttho-sec sec-padding position-relative bg-shade overflow-hidden">
+        <section className="project-star-sec sec-padding position-relative bg-shade overflow-hidden">
             <div className="container">
                 {/* Section Introduction with FadeInUp */}
                 <FadeInAdvanced variant="fadeInUp" duration={800} threshold={0.2}>
@@ -63,7 +63,7 @@ export default function ProjectNtthoSec() {
                 {/* Filter Tabs with FadeInUp */}
                 <FadeInAdvanced variant="fadeInUp" delay={150} duration={800} threshold={0.2}>
                     <div className="filter-nav-wrap d-flex flex-wrap justify-content-center gap-2 mb-5">
-                        {projectNtthoCategories.map((cat) => (
+                        {projectStarCategories.map((cat) => (
                             <button
                                 key={cat.key}
                                 type="button"
@@ -319,18 +319,6 @@ export default function ProjectNtthoSec() {
                                             <strong className="text-danger">{activeModalItem.author}</strong>
                                         </div>
                                     </div>
-                                    <div className="col-sm-6">
-                                        <div className="p-3 bg-light rounded-3">
-                                            <span className="text-muted small d-block">Hệ thống Service Mapping:</span>
-                                            <strong className="text-dark">Topic #{activeModalItem.topicId} | Category #{activeModalItem.categoryId}</strong>
-                                        </div>
-                                    </div>
-                                    <div className="col-sm-6">
-                                        <div className="p-3 bg-light rounded-3">
-                                            <span className="text-muted small d-block">Đường dẫn bài viết thực tế:</span>
-                                            <code className="text-danger small">{activeModalItem.urlName}</code>
-                                        </div>
-                                    </div>
                                 </div>
 
                                 <div className="d-flex justify-content-end gap-2 mt-4 pt-3 border-top">
@@ -353,5 +341,3 @@ export default function ProjectNtthoSec() {
         </section>
     );
 }
-
-
