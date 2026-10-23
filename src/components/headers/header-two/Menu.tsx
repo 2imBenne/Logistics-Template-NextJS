@@ -1,5 +1,5 @@
 "use client";
-import LogoW from "@/assets/images/logo-w.svg"; 
+import LogoConRuaBien from "@/assets/images/logo-con-rua-bien.png";
 import { useTranshubContext } from "@/components/context/useTranshubContext";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,8 +9,16 @@ export default function Menu() {
     return (
         <>
             <div className="container ct-container">
-                <Link href="/" className="navbar-brand">
-                    <Image src={LogoW} width={220} height={56} alt="logo" className="img-fluid" />
+                <Link href="/index-2" className="navbar-brand">
+                    <Image
+                        src={LogoConRuaBien}
+                        width={130}
+                        height={68}
+                        alt="Con Rùa Biển - Chuyên Chở Chuyên Nghiệp"
+                        priority
+                        style={{ height: "68px", width: "auto", objectFit: "contain" }}
+                        className="img-fluid"
+                    />
                 </Link>
                 <button
                     onClick={() => setIsMobile(pre => !pre)}
@@ -65,15 +73,21 @@ export default function Menu() {
                         </button>
                         <Link href="/quote" className="btn btn-primary btn-hover">
 
-                            Free Quote <i className="fa fa-arrow-right"></i>
+                            Báo giá <i className="fa fa-arrow-right"></i>
                             <span></span>
                         </Link>
                     </div>
                 </div>
                 <div className={`offcanvas offcanvas-start offcanvas-nav ${isMobile ? 'show' : ''}`}>
                     <div className="offcanvas-header">
-                        <Link href="/" className="text-inverse">
-                            <Image src={LogoW} width={220} height={56} alt="Logo" />
+                        <Link href="/index-2" className="text-inverse">
+                            <Image
+                                src={LogoConRuaBien}
+                                width={120}
+                                height={48}
+                                alt="Con Rùa Biển - Chuyên Chở Chuyên Nghiệp"
+                                style={{ height: "48px", width: "auto", objectFit: "contain" }}
+                            />
                         </Link>
                         <button
                             onClick={() => setIsMobile(pre => !pre)}

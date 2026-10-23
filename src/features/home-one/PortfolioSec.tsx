@@ -60,8 +60,8 @@ export default function PortfolioSec() {
                             </h2>
                         </div>
                         <div className="header-slider-nav">
-                            <div onClick={projectNextSlide} className="swiper-button-next"></div>
-                            <div onClick={projectPrevSlide} className="swiper-button-prev"></div>
+                            <div onClick={projectPrevSlide} className="swiper-button-prev" role="button" aria-label="Previous Slide"></div>
+                            <div onClick={projectNextSlide} className="swiper-button-next" role="button" aria-label="Next Slide"></div>
                         </div>
                     </div>
                 </div>

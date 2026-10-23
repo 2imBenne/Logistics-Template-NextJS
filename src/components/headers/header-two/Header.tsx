@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react"; 
-import Flag from "@/assets/images/flag.png";  
+import FlagEn from "@/assets/images/flag.png";  
+import FlagVn from "@/assets/images/flag-vn.png";
 import LanguageSelect, { LanguageOpt } from "@/components/elements/LanguageSelect";
 import Link from "next/link";
 import Menu from "./Menu";
 
 const language: LanguageOpt[] = [
-    { image: Flag.src, language: "English" },
-    { image: Flag.src, language: "Japanese" },
-    { image: Flag.src, language: "Chinese" },
+    { image: FlagVn.src, language: "Tiếng Việt" },
+    { image: FlagEn.src, language: "English" },
 ];
 export default function Header() {
     const [isStick, setIsSticky] = useState<boolean>(false);
@@ -59,9 +59,9 @@ export default function Header() {
                                                     d="M15.156 10.406q.47.22.688.656.219.438.125.938l-.688 2.969a1.35 1.35 0 0 1-.5.781q-.374.313-.875.313-3.874-.032-7-1.907a13.7 13.7 0 0 1-5-5Q.031 6.032 0 2.156q0-.5.313-.875a1.35 1.35 0 0 1 .78-.5l2.97-.687Q4.563 0 5 .219t.656.687l1.375 3.188q.345.969-.406 1.656l-1.25 1.031a9.54 9.54 0 0 0 3.906 3.907l1.031-1.25q.688-.75 1.657-.407zm-.844 4.344L15 11.781a.45.45 0 0 0-.25-.469l-3.187-1.374q-.281-.094-.47.124l-1.312 1.594q-.249.282-.594.125A10.3 10.3 0 0 1 6.345 9.72 10.3 10.3 0 0 1 4.28 6.875q-.156-.344.125-.594L6 4.97q.22-.188.125-.469L4.75 1.313q-.125-.25-.375-.25h-.094l-2.968.687q-.282.094-.313.406.03 3.594 1.75 6.5a13.46 13.46 0 0 0 4.656 4.656q2.906 1.72 6.5 1.75.313-.03.406-.312"
                                                 />
                                             </svg>
-                                            <a href="tel:8208383727">
+                                            <a href="tel:84945000006">
 
-                                                Phone: +92 8208 383 727
+                                                Phone: 0945 000 006
                                             </a>
                                         </li>
                                         <li>
@@ -77,8 +77,8 @@ export default function Header() {
                                                     d="M0 2Q.03 1.157.594.594 1.157.032 2 0h12q.844.03 1.406.594Q15.97 1.157 16 2v8q-.03.844-.594 1.406-.563.563-1.406.594H2q-.843-.03-1.406-.594Q.032 10.843 0 10zm1 0v1.25l6.125 4.469q.875.594 1.75 0L15 3.25V2a.97.97 0 0 0-.281-.719A.97.97 0 0 0 14 1H1.969q-.406 0-.688.281A1.1 1.1 0 0 0 .97 2zm0 2.5V10q0 .438.281.719A.97.97 0 0 0 2 11h12a.97.97 0 0 0 .719-.281A.97.97 0 0 0 15 10V4.5L9.469 8.531q-.656.5-1.469.5a2.36 2.36 0 0 1-1.469-.5z"
                                                 />
                                             </svg>
-                                            <a href="mailto:info@transhub.com">
-                                                Email: info@transhub.com
+                                            <a href="mailto:tuyennguyen@conruabien.vn">
+                                                Email: tuyennguyen@conruabien.vn
                                             </a>
                                         </li>
                                         <li>
@@ -95,7 +95,7 @@ export default function Header() {
                                                 />
                                             </svg>
                                             <span>
-                                                123 Street, New York, USA
+                                                14E QL22, Tân Xuân, Hóc Môn, TP.HCM
                                             </span>
                                         </li>
                                     </ul>
@@ -122,9 +122,9 @@ export default function Header() {
                                                         d="M15.156 10.406q.47.22.688.656.219.438.125.938l-.688 2.969a1.35 1.35 0 0 1-.5.781q-.374.313-.875.313-3.874-.032-7-1.907a13.7 13.7 0 0 1-5-5Q.031 6.032 0 2.156q0-.5.313-.875a1.35 1.35 0 0 1 .78-.5l2.97-.687Q4.563 0 5 .219t.656.687l1.375 3.188q.345.969-.406 1.656l-1.25 1.031a9.54 9.54 0 0 0 3.906 3.907l1.031-1.25q.688-.75 1.657-.407zm-.844 4.344L15 11.781a.45.45 0 0 0-.25-.469l-3.187-1.374q-.281-.094-.47.124l-1.312 1.594q-.249.282-.594.125A10.3 10.3 0 0 1 6.345 9.72 10.3 10.3 0 0 1 4.28 6.875q-.156-.344.125-.594L6 4.97q.22-.188.125-.469L4.75 1.313q-.125-.25-.375-.25h-.094l-2.968.687q-.282.094-.313.406.03 3.594 1.75 6.5a13.46 13.46 0 0 0 4.656 4.656q2.906 1.72 6.5 1.75.313-.03.406-.312"
                                                     />
                                                 </svg>
-                                                <a href="tel:8208383727">
+                                                <a href="tel:840945000006">
 
-                                                    Phone: +92 8208 383 727
+                                                    Phone: +84945000006
                                                 </a>
                                             </li>
                                             <li>
@@ -140,8 +140,8 @@ export default function Header() {
                                                         d="M0 2Q.03 1.157.594.594 1.157.032 2 0h12q.844.03 1.406.594Q15.97 1.157 16 2v8q-.03.844-.594 1.406-.563.563-1.406.594H2q-.843-.03-1.406-.594Q.032 10.843 0 10zm1 0v1.25l6.125 4.469q.875.594 1.75 0L15 3.25V2a.97.97 0 0 0-.281-.719A.97.97 0 0 0 14 1H1.969q-.406 0-.688.281A1.1 1.1 0 0 0 .97 2zm0 2.5V10q0 .438.281.719A.97.97 0 0 0 2 11h12a.97.97 0 0 0 .719-.281A.97.97 0 0 0 15 10V4.5L9.469 8.531q-.656.5-1.469.5a2.36 2.36 0 0 1-1.469-.5z"
                                                     />
                                                 </svg>
-                                                <a href="mailto:info@transhub.com">
-                                                    Email: info@transhub.com
+                                                <a href="mailto:tuyennguyen@conruabien.vn">
+                                                    Email: tuyennguyen@conruabien.vn
                                                 </a>
                                             </li>
                                             <li>
@@ -158,7 +158,7 @@ export default function Header() {
                                                     />
                                                 </svg>
                                                 <span>
-                                                    123 Street, New York, USA
+                                                    14E QL22, Tân Xuân, Hóc Môn, TP.HCM
                                                 </span>
                                             </li>
                                         </ul>
@@ -166,19 +166,13 @@ export default function Header() {
                                 </div>
 
                                 <div className="header-cta d-flex align-items-center gap-3">
-                                    <LanguageSelect languageItem={currentLanguage} onChange={(language) => setCurrentLanguage(language)} />
+                                    <LanguageSelect languageArray={language} languageItem={currentLanguage} onChange={(lang) => setCurrentLanguage(lang)} />
                                     <div className="social-share ms-4">
-                                        <Link href="#">
+                                        <Link href="https://www.facebook.com/ChanhxePhuQuoc/">
                                             <i className="fa-brands fa-facebook-f"></i>
                                         </Link>
-                                        <Link href="#">
-                                            <i className="fa-brands fa-x-twitter"></i>
-                                        </Link>
-                                        <Link href="#">
+                                        <Link href="https://www.youtube.com/@muoituyenvlog334">
                                             <i className="fa-brands fa-youtube"></i>
-                                        </Link>
-                                        <Link href="#">
-                                            <i className="fa-brands fa-linkedin-in"></i>
                                         </Link>
                                     </div>
                                 </div>

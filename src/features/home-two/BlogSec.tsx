@@ -15,14 +15,14 @@ export default function BlogSec() {
                     <div className="d-sm-flex justify-content-between align-items-center">
                         <div className="sec-intro mb-0">
                             <span className="sub-title2 fadeInUp single">
-                                Blog & News
+                                Blog & Tin tức
                             </span>
                             <h2 className="sec-title">
-                                Insights from Our Journal
+                                Góc nhìn từ chúng tôi
                             </h2>
                         </div>
                         <Link href="/blog" className="btn btn-primary">
-                            View all posts <i className="fa fa-arrow-right"></i>
+                            Xem tất cả <i className="fa fa-arrow-right"></i>
                             <span></span>
                         </Link>
                     </div>
@@ -37,8 +37,10 @@ export default function BlogSec() {
                                             <Image
                                                 src={Team?.image}
                                                 className="img-fluid"
-                                                width={343} height={209}
-                                                alt="Image"
+                                                width={343}
+                                                height={209}
+                                                alt={Team?.title || "Image"}
+                                                style={{ width: "100%", height: "210px", objectFit: "cover" }}
                                             />
                                         </Link>
                                     </div>
@@ -65,7 +67,7 @@ export default function BlogSec() {
                                                 href="/single-post"
                                                 className="link-btn"
                                             >
-                                                Learn more
+                                                Tìm hiểu thêm
                                                 <i className="fa-solid fa-circle-arrow-right"></i>
                                             </Link>
                                         </div>

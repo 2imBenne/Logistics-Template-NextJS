@@ -1,4 +1,9 @@
 import { StaticImageData } from "next/image"; 
+import Banner1 from "@/assets/images/banner-pha-bien.avif";
+import Banner2 from "@/assets/images/banner-dau-keo.avif";
+import Banner3 from "@/assets/images/banner-xe-tai.avif";
+import Banner4 from "@/assets/images/banner-xa-lan.avif";
+import Banner5 from "@/assets/images/banner-hang-khong.avif";
 import  blog1 from "@/assets/images/blog1.jpg"
 import  blog2 from "@/assets/images/blog2.jpg"
 import  blog3 from "@/assets/images/blog3.jpg"
@@ -104,73 +109,59 @@ export const blogGridData: BlogEntry[] = [
 export const blogCardData: BlogEntry[] = [
     {
         id: 1,
-        image: blog4,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner1,
+        author: "Mười Tuyền",
+        date: "20 Th10, 2026",
+        title: "Kinh nghiệm vận chuyển hàng hóa ra đảo Phú Quốc an toàn và tiết kiệm",
     },
     {
         id: 2,
-        image: blog5,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner2,
+        author: "Mười Tuyền",
+        date: "18 Th10, 2026",
+        title: "Dịch vụ vận chuyển container và xe đầu kéo chuyên dụng đi Phú Quốc",
     },
     {
         id: 3,
-        image: blog6,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner3,
+        author: "Mười Tuyền",
+        date: "15 Th10, 2026",
+        title: "Quy trình nhận ghép hàng lẻ và giao nhận tận nơi TP.HCM - Phú Quốc",
     },
     {
         id: 4,
-        image: blog4,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner4,
+        author: "Mười Tuyền",
+        date: "12 Th10, 2026",
+        title: "Vận tải đường thủy bằng xà lan chuyên dụng cho hàng công trình Phú Quốc",
     },
     {
         id: 5,
-        image: blog5,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner5,
+        author: "Mười Tuyền",
+        date: "10 Th10, 2026",
+        title: "Dịch vụ chuyển phát nhanh hỏa tốc hàng không kết nối Phú Quốc",
     },
     {
         id: 6,
-        image: blog6,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner1,
+        author: "Mười Tuyền",
+        date: "08 Th10, 2026",
+        title: "Những lưu ý quan trọng khi gửi hàng hóa qua chành xe đi Phú Quốc",
     },
     {
         id: 7,
-        image: blog4,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner2,
+        author: "Mười Tuyền",
+        date: "05 Th10, 2026",
+        title: "Lịch trình xe tải và phà biển vận chuyển hàng hóa Con Rùa Biển",
     },
     {
         id: 8,
-        image: blog5,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
-    },
-    {
-        id: 9,
-        image: blog6,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
-    },
-    {
-        id: 10,
-        image: blog4,
-        author: "Adam Smith",
-        date: "07 Nov,2025",
-        title: "TranHub Named a Finalist For Year' 25 Best Choice Award",
+        image: Banner3,
+        author: "Mười Tuyền",
+        date: "02 Th10, 2026",
+        title: "Cam kết bồi thường 100% giá trị hàng hóa khi xảy ra sự cố vận chuyển",
     },
 ];
 

@@ -25,12 +25,12 @@ export default function TeamSec() {
                     <div className="sec-intro mx-auto text-center">
                         <span className="sub-title2 fadeInUp">
                             <TextAnimation animationStyle="style1">
-                                our Expert Team Members
+                                Đội ngũ của chúng tôi
                             </TextAnimation>
                         </span>
                         <h2 className="sec-title">
                             <TextAnimation animationStyle="style1">
-                                Meet our Special Support Team Members!
+                                Đội ngũ chuyên gia và hỗ trợ của chúng tôi
                             </TextAnimation>
                         </h2>
                     </div>
@@ -40,7 +40,13 @@ export default function TeamSec() {
                                 <div className="team-card">
                                     <div className="team-thumb round overflow-hidden">
                                         <Link href={member.link}>
-                                            <Image src={member.image} width={283} height={334} alt={member.name} />
+                                            <Image
+                                                src={member.image}
+                                                width={283}
+                                                height={334}
+                                                alt={member.name}
+                                                style={{ width: "100%", height: "334px", objectFit: "cover", objectPosition: "top center" }}
+                                            />
                                         </Link>
                                         <div className="team-share">
                                             <a

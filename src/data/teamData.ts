@@ -2,6 +2,7 @@ import Tm1 from "@/assets/images/tm1.jpg";
 import Tm2 from "@/assets/images/tm2.jpg";
 import Tm3 from "@/assets/images/tm3.jpg";
 import Tm4 from "@/assets/images/tm4.jpg";
+import NguyenThanhTuyen from "@/assets/images/nguyen-thanh-tuyen.png";
 import { StaticImageData } from "next/image";
 
 // Type definitions
@@ -48,11 +49,27 @@ const defaultSocialLinks: SocialLink[] = [
 export const teamData: TeamMemberType[] = [
     {
         id: 1,
-        name: "Jenny Noah",
-        position: "Head of operations",
-        image: Tm1,
+        name: "Nguyễn Thanh Tuyền",
+        position: "Tổng Giám đốc",
+        image: NguyenThanhTuyen,
         link: "/single-team",
-        socialLinks: defaultSocialLinks
+        socialLinks: [
+            {
+                platform: "facebook",
+                url: "https://www.facebook.com/ChanhxePhuQuoc/",
+                icon: "fab fa-facebook-f"
+            },
+            {
+                platform: "youtube",
+                url: "https://www.youtube.com/@muoituyenvlog334",
+                icon: "fab fa-youtube"
+            },
+            {
+                platform: "linkedin",
+                url: "#",
+                icon: "fab fa-linkedin-in"
+            }
+        ]
     },
     {
         id: 2,

@@ -16,32 +16,32 @@ export interface FreightOptionType {
 export const faqData: FaqItemType[] = [
     {
         id: 1,
-        question: "How can I track my shipment?",
-        answer: "You can easily track your shipment by entering your Tracking ID into our online tracking tool. Once submitted, you'll receive real‑time updates on your shipment's location, delivery.",
+        question: "Làm thế nào để tôi có thể theo dõi lô hàng của mình?",
+        answer: "Bạn có thể dễ dàng theo dõi lô hàng của mình bằng cách nhập Mã theo dõi (Tracking ID) vào công cụ theo dõi trực tuyến của chúng tôi. Sau khi gửi thông tin, bạn sẽ nhận được các cập nhật theo thời gian thực về vị trí và tình trạng giao hàng của lô hàng.",
         isOpen: true // First item open by default
     },
     {
         id: 2,
-        question: "How do I get in touch with customer support?",
-        answer: "Meeting project deadlines is a top priority. We understand the importance of timely delivery and have established a comprehensive approach to ensure that all projects are completed",
+        question: "Làm thế nào để tôi liên hệ với bộ phận hỗ trợ khách hàng?",
+        answer: "Bạn có thể gọi đến số hotline, gửi email, chat trực tuyến hoặc điền vào biểu mẫu liên hệ trên trang web. Đội ngũ của chúng tôi sẽ phản hồi trong thời gian sớm nhất.",
         isOpen: false
     },
     {
         id: 3,
-        question: "What if my shipment is delayed or lost?",
-        answer: "Meeting project deadlines is a top priority. We understand the importance of timely delivery and have established a comprehensive approach to ensure that all projects are completed",
+        question: "Điều gì xảy ra nếu lô hàng của tôi bị chậm trễ hoặc thất lạc?",
+        answer: "Chúng tôi có chính sách bồi thường rõ ràng. Đối với lô hàng chậm trễ, chúng tôi sẽ áp dụng chính sách đền bù theo thỏa thuận. Trong trường hợp lô hàng bị thất lạc, chúng tôi cam kết bồi thường 100% giá trị hàng hóa.",
         isOpen: false
     },
     {
         id: 4,
-        question: "Can I schedule recurring shipments?",
-        answer: "Meeting project deadlines is a top priority. We understand the importance of timely delivery and have established a comprehensive approach to ensure that all projects are completed",
+        question: "Tôi có thể lên lịch gửi hàng định kỳ không?",
+        answer: "Có, chúng tôi cung cấp dịch vụ vận chuyển theo hợp đồng định kỳ cho các doanh nghiệp. Vui lòng liên hệ với bộ phận kinh doanh để được tư vấn về các gói dịch vụ phù hợp.",
         isOpen: false
     },
     {
         id: 5,
-        question: "What is your pricing model?",
-        answer: "Teachers play a central role in education. They impart knowledge, facilitate learning, and help students develop critical thinking skills. Teachers also contribute to the social and emotional development of students.",
+        question: "Phương thức tính giá của công ty là gì?",
+        answer: "Giá cước được tính toán dựa trên khối lượng, kích thước, loại hàng hóa và tuyến đường vận chuyển. Chúng tôi cung cấp bảng giá chi tiết trên trang web và luôn cập nhật theo thị trường.",
         isOpen: false
     }
 ];

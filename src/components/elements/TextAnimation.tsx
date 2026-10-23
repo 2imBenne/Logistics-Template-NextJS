@@ -21,18 +21,33 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
 
     const processChildren = (node: ReactNode, parentKey: string = ''): ReactNode => {
         if (typeof node === "string") {
-            return node.split("").map((char, index) => (
-                <motion.div
-                    key={`${parentKey}-char-${index}-${char}`}
-                    variants={getCharVariants()}
-                    style={{
-                        display: "inline-block",
-                        whiteSpace: char === " " ? "pre" : "normal",
-                    }}
-                >
-                    {char === " " ? "\u00A0" : char}
-                </motion.div>
-            ));
+            const tokens = node.split(/(\s+)/);
+            return tokens.map((token, tokenIndex) => {
+                if (/^\s+$/.test(token)) {
+                    return token;
+                }
+                return (
+                    <span
+                        key={`${parentKey}-w-${tokenIndex}`}
+                        style={{
+                            display: "inline-block",
+                            whiteSpace: "nowrap",
+                        }}
+                    >
+                        {token.split("").map((char, charIndex) => (
+                            <motion.span
+                                key={`${parentKey}-c-${tokenIndex}-${charIndex}`}
+                                variants={getCharVariants()}
+                                style={{
+                                    display: "inline-block",
+                                }}
+                            >
+                                {char}
+                            </motion.span>
+                        ))}
+                    </span>
+                );
+            });
         }
 
         if (React.isValidElement(node)) {
@@ -140,14 +155,15 @@ const TextAnimation: React.FC<TextAnimationProps> = ({
     };
 
     return (
-        <motion.div
+        <motion.span
             ref={ref}
             variants={containerVariants}
             initial="hidden"
             animate={isInView ? "visible" : "hidden"}
+            style={{ display: "inline" }}
         >
             {processChildren(children)}
-        </motion.div>
+        </motion.span>
     );
 };
 

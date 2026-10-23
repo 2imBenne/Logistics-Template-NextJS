@@ -80,8 +80,8 @@ const CustomSelect: React.FC<CustomSelectProps> = ({
         mute: '#788094',           // Border and placeholder color
         info: '#fff',              // Selected text color
         background: '#fff',        // Background color
-        primaryLight: 'rgba(253, 85, 35, 0.1)', // Hover background
-        primaryGlow: 'rgba(253, 85, 35, 0.2)',  // Focus glow
+        primaryLight: 'rgba(201, 50, 43, 0.1)', // Hover background
+        primaryGlow: 'rgba(201, 50, 43, 0.2)',  // Focus glow
     };
 
     // Merge custom colors with defaults

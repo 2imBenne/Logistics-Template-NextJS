@@ -56,12 +56,12 @@ export default function FaqSec() {
                     <div className="sec-intro mx-auto text-center">
                         <span className="sub-title2 fadeInUp">
                             <TextAnimation animationStyle="style1">
-                                our Expert Team Members
+                                Đội ngũ của chúng tôi
                             </TextAnimation>
                         </span>
                         <h2 className="sec-title">
                             <TextAnimation animationStyle="style1">
-                                What Details Are Required for a Quote?
+                                Thông tin cần thiết để báo giá
                             </TextAnimation>
                         </h2>
                     </div>
@@ -114,7 +114,7 @@ export default function FaqSec() {
                         <div className="col-lg-5">
                             <div className="contact-form rounded-4 position-relative">
                                 <h3 className="display-4">
-                                    Make An Appointment
+                                    Đặt lịch hẹn
                                 </h3>
                                 <form onSubmit={handleSubmit}>
                                     <div className="form-group">
@@ -162,7 +162,7 @@ export default function FaqSec() {
                                         <i className="fa-regular fa-clipboard"></i>
                                     </div>
                                     <button type="submit" className="btn btn-primary btn-lg w-100 mt-2">
-                                        Book an Appointment
+                                        Đặt lịch hẹn
                                         <i className="fa fa-arrow-right"></i>
                                         <span></span>
                                     </button>
