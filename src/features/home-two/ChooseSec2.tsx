@@ -44,18 +44,17 @@ export default function ChooseSec2() {
                         <div className="col-lg-8">
                             <div className="sec-intro">
                                 <span className="sub-title2 fadeInUp single">
-                                    Our Services
+                                    Dịch vụ của chúng tôi
                                 </span>
                                 <h2 className="sec-title">
-                                    Dependable Import Services for Companies of
-                                    All Sizes
+                                    Dịch vụ uy tín dành cho các doanh nghiệp ở mọi quy mô
                                 </h2>
                             </div>
                         </div>
                         <div className="col-lg-4">
                             <div className="header-slider-nav">
-                                <div onClick={projectNextSlide} className="swiper-button-next"></div>
-                                <div onClick={projectPrevSlide} className="swiper-button-prev"></div>
+                                <div onClick={projectPrevSlide} className="swiper-button-prev" role="button" aria-label="Slide trước"></div>
+                                <div onClick={projectNextSlide} className="swiper-button-next" role="button" aria-label="Slide tiếp theo"></div>
                             </div>
                         </div>
                     </div>
@@ -116,7 +115,7 @@ export default function ChooseSec2() {
                                                                 <span className="icon rounded-3">
                                                                     <i className="fa fa-arrow-right"></i>
                                                                 </span>
-                                                                View Details
+                                                                Xem Chi Tiết
                                                             </Link>
                                                         </div>
                                                     </div>
@@ -137,11 +136,11 @@ export default function ChooseSec2() {
                 <div className="container">
                     <div className="sec-intro mx-auto text-center">
                         <span className="sub-title2 fadeInUp">
-                            Why Choose Us
+                            Lý do chọn chúng tôi
                         </span>
                         <h2 className="sec-title">
                             <TextAnimation animationStyle="style1">
-                                Transportation Services We Are Often Considered
+                                Dịch vụ vận tải thường được xem qua
                             </TextAnimation>
                         </h2>
                     </div>
@@ -149,7 +148,7 @@ export default function ChooseSec2() {
                         <div className="col-lg-3 col-sm-6">
                             <FadeInAdvanced className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    Water Installation
+                                    DỊCH VỤ VẬN TẢI HÀNG HÓA BẮC NAM
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={Water} width={40} height={40} alt="Fan" />
@@ -157,7 +156,7 @@ export default function ChooseSec2() {
                             </FadeInAdvanced>
                             <FadeInAdvanced className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    Air Heating Installation
+                                    VẬN CHUYỂN CONTAINER ĐI PHÚ QUỐC
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={AirHeat} width={40} height={40} alt="Fan" />
@@ -165,7 +164,7 @@ export default function ChooseSec2() {
                             </FadeInAdvanced>
                             <FadeInAdvanced className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    Radiator Heating
+                                    CHO THUÊ XE TẢI ĐI PHÚ QUỐC GIÁ RẺ
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={Fan} width={40} height={40} alt="Fan" />
@@ -180,7 +179,7 @@ export default function ChooseSec2() {
                         <div className="col-lg-3 col-sm-6 reverse-choose">
                             <FadeInAdvanced delay={100} className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    Celling Installation
+                                    CHÀNH XE ĐI PHÚ QUỐC
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={Celling} width={40} height={40} alt="Fan" />
@@ -188,7 +187,7 @@ export default function ChooseSec2() {
                             </FadeInAdvanced>
                             <FadeInAdvanced delay={100} className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    AC Conditioning
+                                    NHẬN VẬN CHUYỂN HÀNG NHỎ LẺ ĐI PHÚ QUỐC
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={AcCond} width={40} height={40} alt="Fan" />
@@ -196,7 +195,7 @@ export default function ChooseSec2() {
                             </FadeInAdvanced>
                             <FadeInAdvanced delay={100} className="single-choose fadeInUp" variant="fadeInUp">
                                 <h3 className="display-6 fw-bold">
-                                    Floor Heating
+                                    DỊCH VỤ CHO THUÊ XE CẨU TẠI PHÚ QUỐC
                                 </h3>
                                 <span className="icon bg-primary">
                                     <Image src={FloorHeat} width={40} height={40} alt="Fan" />

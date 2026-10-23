@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useRef } from "react"; 
-import Flag from "@/assets/images/flag.png";
+import FlagEn from "@/assets/images/flag.png";
+import FlagVn from "@/assets/images/flag-vn.png";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,9 +17,8 @@ interface CustomSelectProps {
     onChange?: (value: LanguageOpt) => void;
 }
 const defaultOptions: LanguageOpt[] = [
-    { image: Flag.src, language: "English" },
-    { image: Flag.src, language: "Japanese" },
-    { image: Flag.src, language: "Chinese" },
+    { image: FlagVn.src, language: "Tiếng Việt" },
+    { image: FlagEn.src, language: "English" },
 ];
 
 const LanguageSelect: React.FC<CustomSelectProps> = ({
@@ -30,6 +30,12 @@ const LanguageSelect: React.FC<CustomSelectProps> = ({
     const [selected, setSelected] = React.useState<LanguageOpt>(languageItem || languageArray[0]);
     const selectRef = useRef<HTMLDivElement>(null);
     
+    useEffect(() => {
+        if (languageItem) {
+            setSelected(languageItem);
+        }
+    }, [languageItem]);
+
     useEffect(() => {
         const handleClickOutside = (e: MouseEvent) => {
             if (selectRef.current && !selectRef.current.contains(e.target as Node)) {
@@ -50,9 +56,18 @@ const LanguageSelect: React.FC<CustomSelectProps> = ({
         <div className="dropdown lang-select d-none d-sm-block" ref={selectRef}>
             <Link className={`dropdown-toggle d-flex gap-1 align-items-center ${isOpen ? "show" : ""}`}
                 href="#"
-                onClick={() => setIsOpen(!isOpen)}
+                onClick={(e) => {
+                    e.preventDefault();
+                    setIsOpen(!isOpen);
+                }}
             >
-                <Image src={selected.image} width={24} height={24} alt="flag" />
+                <Image
+                    src={selected.image}
+                    width={20}
+                    height={20}
+                    alt={selected.language}
+                    style={{ borderRadius: "50%", objectFit: "cover" }}
+                />
                 <span>{selected.language}</span>
             </Link>
 
@@ -60,16 +75,20 @@ const LanguageSelect: React.FC<CustomSelectProps> = ({
                 {
                     languageArray.map((item: LanguageOpt, i) => (
                         <li key={i}>
-                            <Link href="#" className="dropdown-item"
-                                onClick={() => handleSelect(item)}
+                            <Link href="#" className={`dropdown-item ${selected.language === item.language ? "active" : ""}`}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    handleSelect(item);
+                                }}
                             >
                                 <Image
                                     src={item.image}
-                                    width={24}
-                                    height={24}
-                                    alt={item?.language}
+                                    width={20}
+                                    height={20}
+                                    alt={item.language}
+                                    style={{ borderRadius: "50%", objectFit: "cover", marginRight: "8px" }}
                                 />
-                                {item?.language}
+                                {item.language}
                             </Link>
                         </li>
                     ))

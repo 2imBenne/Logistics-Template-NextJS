@@ -24,7 +24,7 @@ export default function TextSlideSec() {
                             </div>
                             <div className="text-item">
                                 <Image src={Star1} style={{width: "auto" , height:"auto"}} alt="logo" />
-                                <h3 className="display-1">Global Export</h3>
+                                <h3 className="display-1">Export</h3>
                             </div>
                             <div className="text-item">
                                 <Image src={Star1} style={{width: "auto" , height:"auto"}} alt="logo" />
@@ -32,7 +32,7 @@ export default function TextSlideSec() {
                             </div>
                             <div className="text-item">
                                 <Image src={Star1} style={{width: "auto" , height:"auto"}} alt="logo" />
-                                <h3 className="display-1">Global Import</h3>
+                                <h3 className="display-1">Import</h3>
                             </div>
                         </MarqueeSlider>
                     </div>

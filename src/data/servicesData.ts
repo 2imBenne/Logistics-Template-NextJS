@@ -1,13 +1,11 @@
 // Import all necessary images
 import Modal from '@/assets/images/modal.svg';
 import Logistic from '@/assets/images/logistic.svg';
-import ServS1 from '@/assets/images/serv-s1.png';
 import ServS2 from '@/assets/images/serv-s2.png';
 import ServS3 from '@/assets/images/serv-s3.png';
 import ServS4 from '@/assets/images/serv-s4.png';
 import ServS5 from '@/assets/images/serv-s5.png';
 import ServS6 from '@/assets/images/serv-s6.png';
-import Bus from '@/assets/images/icons/bus.png';
 import BusGear from '@/assets/images/icons/bus-gear.png';
 import PlaneLg from '@/assets/images/icons/plane-lg.png';
 import Road from '@/assets/images/icons/road.png';
@@ -45,57 +43,57 @@ export interface ServiceCardType2 {
 export const servicesData: ServiceCardType1[] = [
     {
         id: 1,
-        title: 'International Transport',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
-        backgroundImage: ServS1,
-        icon: Bus,
-        link: '/single-service',
-        delay: '.2'
-    },
-    {
-        id: 2,
-        title: 'Local Truck Transport',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
+        title: 'Vận tải đường bộ',
+        description: 'Vận tải hàng hóa nội địa nhanh chóng, an toàn và tiết kiệm, đáp ứng mọi nhu cầu vận chuyển đa dạng của doanh nghiệp',
         backgroundImage: ServS2,
         icon: BusGear,
         link: '/single-service',
         delay: '.4'
     },
     {
-        id: 3,
-        title: 'Skyline Express',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
+        id: 2,
+        title: 'Chuyển phát nhanh hàng không',
+        description: 'Vận chuyển hỏa tốc, an toàn, đảm bảo thời gian, phù hợp cho các tài liệu và hàng hóa quan trọng',
         backgroundImage: ServS3,
         icon: PlaneLg,
         link: '/single-service',
         delay: '.6'
     },
     {
-        id: 4,
-        title: 'Rail Personal Delivery',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
+        id: 3,
+        title: 'Vận tải đường biển',
+        description: 'Vận tải hàng hóa đường biển nhanh chóng, an toàn và tiết kiệm, đáp ứng mọi nhu cầu vận chuyển đa dạng của doanh nghiệp',
         backgroundImage: ServS4,
         icon: Road,
         link: '/single-service',
         delay: '.2'
     },
     {
-        id: 5,
-        title: 'Multimodal Transport',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
+        id: 4,
+        title: 'Vận tải đa phương thức',
+        description: 'Kết hợp đường bộ, đường biển và đường hàng không tối ưu chi phí, thời gian và an toàn hàng hóa',
         backgroundImage: ServS5,
         icon: Modal,
         link: '/single-service',
         delay: '.4'
     },
     {
-        id: 6,
-        title: 'E-commerce Logistics',
-        description: 'At TransHub, we revoluti cargo services,log prioritizing precision, efficiency, antransport worldwide connectivity',
+        id: 5,
+        title: 'Kho bãi và phân phối',
+        description: 'Giải pháp lưu trữ và phân phối hàng hóa tối ưu, đảm bảo an toàn và tiết kiệm chi phí cho doanh nghiệp',
         backgroundImage: ServS6,
         icon: Logistic,
         link: '/single-service',
         delay: '.6'
+    },
+    {
+        id: 6,
+        title: 'Vận tải đường sắt',
+        description: 'Vận tải hàng hóa đường sắt nhanh chóng, an toàn và tiết kiệm, đáp ứng mọi nhu cầu vận chuyển đa dạng của doanh nghiệp',
+        backgroundImage: ServS6,
+        icon: Logistic,
+        link: '/single-service',
+        delay: '.8'
     }
 ];
 

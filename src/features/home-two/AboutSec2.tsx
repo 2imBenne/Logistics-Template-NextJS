@@ -24,8 +24,8 @@ export default function AboutSec2() {
                            <div className="ab-main-img">
                               <Image src={AboutM} width={557} height={582} className="img-fluid" loading="eager" alt='Image' />
                               <div className="experien-stat">
-                                 <p className="text-info m-0"> <span><CounterUp ending={25} /></span>+ Years
-                                    Experience</p>
+                                 <p className="text-info m-0"> <span><CounterUp ending={15} /></span>+ Năm
+                                    Kinh Nghiệm</p>
                               </div>
                               <div className="about-sm">
                                  <Image className="img-fluid" src={AboutM2} width={350} height={350} loading="eager" alt='Image'/>
@@ -38,32 +38,31 @@ export default function AboutSec2() {
                      <div className="about-content">
                         <span className="sub-title2 fadeInUp single">
                            <TextAnimation animationStyle="style1">
-                              About Our Company
+                              Về Con Rùa Biển
                            </TextAnimation>
                         </span>
                         <h2 className="sec-title">
                            <TextAnimation animationStyle="style1">
-                              Why Businesses Trust Our Logistics Solutions
+                              Tại sao các doanh nghiệp tin tưởng giải pháp logistics của chúng tôi
                            </TextAnimation>
                         </h2>
-                        <p className="lead">With over four decades of experience providing solutions to large-scale enterprises
-                           throughout the globe, we offer end-to-end logistics tailored for specific markets.</p>
+                        <p className="lead">Với hơn 15 năm kinh nghiệm cung cấp các giải pháp cho các doanh nghiệp, chúng tôi cung cấp các dịch vụ logistics toàn diện phù hợp với thị trường cụ thể.</p>
                         <ul className="check">
-                           <li>Fast & Reliable Delivery</li>
-                           <li>End-to-End Solutions</li>
-                           <li>Smart Technology</li>
-                           <li>Competitive Pricing</li>
+                           <li>Giao hàng nhanh & đáng tin cậy</li>
+                           <li>Giải pháp toàn diện</li>
+                           <li>Công nghệ thông minh</li>
+                           <li>Giá cả cạnh tranh</li>
                         </ul>
                         <div className="d-sm-flex align-items-center about-cta gap-5">
-                           <Link href="/about" className="btn btn-primary">About More <i className="fa fa-arrow-right"></i><span
+                           <Link href="/about" className="btn btn-primary">Tìm hiểu thêm <i className="fa fa-arrow-right"></i><span
                               style={{ top: '267.45px', left: '119.6px' }}></span> </Link>
 
                            <div className="quick-call d-flex align-items-center">
                               <span className="bg-dark icon-lg rounded-circle text-info"><i
                                  className="fa-solid fa-phone-volume"></i></span>
                               <div className="conn-txt ms-3">
-                                 <p className="m-0">Call Us Any Time:</p>
-                                 <a className="h6 text-primary" href="tel:148359505285">148 359 505 285</a>
+                                 <p className="m-0">Hotline:</p>
+                                 <a className="h6 text-primary" href="tel:0945000006">0945000006</a>
                               </div>
                            </div>
                         </div>
@@ -72,7 +71,7 @@ export default function AboutSec2() {
                         <div className="af-item d-flex align-items-start gap-4">
                            <Image src={Af1} width={48} height={48} alt="transform" />
                            <div className="af-info">
-                              <h3 className="h5">Global logistics </h3>
+                              <h3 className="h5">Logistics </h3>
                               <p>The is a long established fact that a reader.</p>
                            </div>
                         </div>

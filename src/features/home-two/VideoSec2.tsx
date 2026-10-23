@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import { brandsData } from "@/data/brandsData";
 import ServBg2 from "@/assets/images/serv-bg2.jpg";
-import VideoBg from "@/assets/images/video-bg.jpg";
+import VideoBg from "@/assets/images/video-con-rua-bien.jpg";
 import CounterUp from "@/components/elements/CounterUp";
 import TextAnimation from "@/components/elements/TextAnimation";
 import JarallaxSection from "@/components/elements/JarallaxSection";
@@ -21,14 +21,13 @@ export default function VideoSec2() {
                     <div className="row align-items-start">
                         <div className="col-lg-4">
                             <span className="sub-title2 fadeInUp">
-                                Our journey so far
+                                Hành trình của chúng tôi cho đến nay
                             </span>
                         </div>
                         <div className="col-lg-8">
                             <h2 className="sec-title text-info">
                                 <TextAnimation animationStyle="style1">
-                                    Smarter logistics and seamless solutions for
-                                    modern supply chains.
+                                    Giải pháp vận tải thông minh và liền mạch cho các chuỗi cung ứng hiện đại.
                                 </TextAnimation>
                             </h2>
                         </div>
@@ -36,7 +35,7 @@ export default function VideoSec2() {
                 </div>
                 <div className="container ct-container">
                     <JarallaxSection as='div' className="video-box jarallax position-relative text-center" imgSrc={VideoBg.src} overlayOpacity={.5} speed={.2} >
-                        <YoutubeFrem className="play-btn bg-info rounded-circle text-info icon" video="rbFoRH2deeY">
+                        <YoutubeFrem className="play-btn bg-info rounded-circle text-info icon" video="LnGpQfBgKz0">
                             <span>
                                 <i className="fa fa-play"></i>
                             </span>

@@ -28,13 +28,13 @@ export default function OperationSec() {
                         <div className="col-lg-7 pe-lg-5">
                             <span className="sub-title2 fadeInUp single">
                                 <TextAnimation animationStyle="style1">
-                                    Proven Success
+                                    Thành tựu
                                 </TextAnimation>
                             </span>
                             <h2 className="sec-title text-info">
                                 <TextAnimation animationStyle="style1">
-                                    We have helped clients optimize all logistics
-                                    operations.
+                                    Chúng tôi đã giúp khách hàng tối ưu hóa mọi
+                                    hoạt động hậu cần.
                                 </TextAnimation>
                             </h2>
 
@@ -55,12 +55,10 @@ export default function OperationSec() {
                                 >
                                     <span className="th-info text-start">
                                         <span className="h4 d-block">
-                                            Air Freight Solution
+                                            Giải pháp vận tải hàng không
                                         </span>
                                         <span className="p d-block">
-                                            Our cargo service ensures reduced
-                                            costs through efficient logistics
-                                            and streamlined operations.
+                                            Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                         </span>
                                     </span>
                                     <span className="icon-lg rounded-circle">
@@ -79,12 +77,10 @@ export default function OperationSec() {
                                 >
                                     <span className="th-info text-start">
                                         <span className="h4 d-block">
-                                            Warehouse Inventory
+                                            Quản lý tồn kho nhà kho
                                         </span>
                                         <span className="p d-block">
-                                            Our cargo service ensures reduced
-                                            costs through efficient logistics
-                                            and streamlined operations.
+                                            Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                         </span>
                                     </span>
                                     <span className="icon-lg rounded-circle">
@@ -103,12 +99,10 @@ export default function OperationSec() {
                                 >
                                     <span className="th-info text-start">
                                         <span className="h4 d-block">
-                                            By Road Instant Solution
+                                            Giải pháp vận tải đường bộ ngay lập tức
                                         </span>
                                         <span className="p d-block">
-                                            Our cargo service ensures reduced
-                                            costs through efficient logistics
-                                            and streamlined operations.
+                                            Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                         </span>
                                     </span>
                                     <span className="icon-lg rounded-circle">
@@ -144,16 +138,15 @@ export default function OperationSec() {
                                                 <Image src={TabIcon} width={40} height={40} alt="Icon" />
                                             </span>
                                             <h3 className="mt-3 h5">
-                                                Parcel Information
+                                                Thông tin bưu kiện
                                             </h3>
                                             <p>
-                                                Lorain Air freight service
-                                                deliver knowledge opportunity
+                                                Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                             </p>
                                             <Link href="/single-service"
                                                 className="link-btn"
                                             >
-                                                More Details
+                                                Tìm hiểu thêm
                                                 <i className="fa fa-arrow-right"></i>
                                             </Link>
                                         </div>
@@ -181,16 +174,15 @@ export default function OperationSec() {
                                                 <Image src={TabIcon} width={40} height={40} alt="Icon" />
                                             </span>
                                             <h3 className="mt-3 h5">
-                                                Parcel Information
+                                                Thông tin bưu kiện
                                             </h3>
                                             <p>
-                                                Lorain Air freight service
-                                                deliver knowledge opportunity
+                                                Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                             </p>
                                             <Link href="/single-service"
                                                 className="link-btn"
                                             >
-                                                More Details
+                                                Tìm hiểu thêm
                                                 <i className="fa fa-arrow-right"></i>
                                             </Link>
                                         </div>
@@ -218,16 +210,15 @@ export default function OperationSec() {
                                                 <Image src={TabIcon} width={40} height={40} alt="Icon" />
                                             </span>
                                             <h3 className="mt-3 h5">
-                                                By Road Instant Solution
+                                                Giải pháp tức thì cho đường bộ
                                             </h3>
                                             <p>
-                                                Lorain Air freight service
-                                                deliver knowledge opportunity
+                                                Dịch vụ vận chuyển hàng hóa của chúng tôi đảm bảo chi phí giảm thiểu thông qua logistics hiệu quả và hoạt động tinh gọn.
                                             </p>
                                             <Link href="/single-service"
                                                 className="link-btn"
                                             >
-                                                More Details
+                                                Tìm hiểu thêm
                                                 <i className="fa fa-arrow-right"></i>
                                             </Link>
                                         </div>
